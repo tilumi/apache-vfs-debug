@@ -15,10 +15,10 @@ public class Sample {
         String filePath = filePathWithScheme.substring(7);
         File f = new File(filePath);
         System.out.println(
-                "f exists" + f.exists() +
-                        ", is dir " + f.isDirectory() +
-                        ", is file " + f.isFile() +
-                        ", norm " + f.getCanonicalPath() +
-                        ", len " + f.length());
+                filePath + " exists: " + f.exists() +
+                        ", is dir: " + f.isDirectory() +
+                        ", is file: " + f.isFile() +
+                        ", norm: " + f.getCanonicalPath() +
+                        ", len: " + f.length());
     }
 }
